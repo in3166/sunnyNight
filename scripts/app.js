@@ -3,6 +3,22 @@ window.addEventListener('load', () => {
 
     var label2 = document.getElementById('la2');
     var label4 = document.getElementById('la4');
+    var l0 = document.getElementById('l0');
+    var l1 = document.getElementById('l1');
+    var l2 = document.getElementById('l2');
+    var l3 = document.getElementById('l3');
+    var l4 = document.getElementById('l4');
+    var l5 = document.getElementById('l5');
+    var l6 = document.getElementById('l6');
+
+    var d0 = document.getElementById('d0');
+    var d1 = document.getElementById('d1');
+    var d2 = document.getElementById('d2');
+    var d3 = document.getElementById('d3');
+    var d4 = document.getElementById('d4');
+    var d5 = document.getElementById('d5');
+    var d6 = document.getElementById('d6');
+
     let day = new Date(2020, 5, 13);
     let today = new Date();
 
@@ -14,7 +30,9 @@ window.addEventListener('load', () => {
     var cYear = cMonth * 12; // 년 만듬
 
     var dif1 = today - day;
+    //일수 차이
     var dif = parseInt(dif1 / cDay)
+
 
     var namu = dif;
     var text, text2;
@@ -22,8 +40,27 @@ window.addEventListener('load', () => {
     console.log("일차이: " + parseInt(dif1 / cDay));
 
     namu = dif % 6;
-    var na = (namu + 1) % 6;
 
+    label2.innerText = swit(namu);
+    label4.innerText = swit((namu + 1) % 6);
+    l0.innerText = swit(namu);
+    l1.innerText = swit((namu + 1) % 6);
+    l2.innerText = swit((namu + 2) % 6);
+    l3.innerText = swit((namu + 3) % 6);
+    l4.innerText = swit((namu + 4) % 6);
+    l5.innerText = swit((namu + 5) % 6);
+    l6.innerText = swit((namu + 6) % 6);
+    alert(getTodayLabel(today.getDay()));
+    d0.innerText = getTodayLabel(today.getDay());
+    d1.innerText = getTodayLabel(today.getDay() + 1);
+    d2.innerText = getTodayLabel(today.getDay() + 2);
+    d3.innerText = getTodayLabel(today.getDay() + 3);
+    d4.innerText = getTodayLabel(today.getDay() + 4);
+    d5.innerText = getTodayLabel(today.getDay() + 5);
+    d6.innerText = getTodayLabel(today.getDay() + 6);
+});
+
+function swit(namu) {
     switch (namu) {
         case 0:
         case 1:
@@ -41,27 +78,15 @@ window.addEventListener('load', () => {
             text = "??";
             break;
     }
-    switch (na) {
-        case 0:
-        case 1:
-            text2 = "오전";
-            break;
-        case 2:
-        case 3:
-            text2 = "야간";
-            break;
-        case 5:
-        case 4:
-            text2 = "휴일";
-            break;
-        default:
-            text2 = "??";
-            break;
-    }
+    return text;
+}
 
-    label2.innerText = text;
-    label4.innerText = text2;
+//요일 구하기
+function getTodayLabel(today) {
 
+    var week = new Array('일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일');
+    today = today % 7;
+    var todayLabel = week[today];
 
-
-});
+    return todayLabel;
+}
