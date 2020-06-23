@@ -9,7 +9,7 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <link rel="manifest" href="sunnyNight/manifest.json">
-    <link rel="stylesheet" type="text/css" href="https://github.com/in3166/sunnyNight/styles/inline.css">
+    <link rel="stylesheet" type="text/css" href="https://in3166.github.io/sunnyNight/sunnyNight/styles/inline.css">
     <title>sunnyNight</title>
     <link rel="icon" href="sunnyNight/images/favicon.ico" type="image/icon-72x72" />
     <!-- CODELAB: Add meta theme-color -->
@@ -38,7 +38,7 @@
         // CODELAB: Register service worker.
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/service-worker.js')
+                navigator.serviceWorker.register('https://in3166.github.io/sunnyNight/sunnyNight/service-worker.js')
                     .then((reg) => {
                         console.log('Service worker registered.', reg);
                     });
