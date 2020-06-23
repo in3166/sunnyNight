@@ -23,10 +23,10 @@ const DATA_CACHE_NAME = 'data-cache-v2';
 // CODELAB: Add list of files to cache here.
 const FILES_TO_CACHE = [
     '/',
-    'https://in3166.github.io/sunnyNighr/index.html',
-    'https://in3166.github.io/sunnyNighr/scripts/app.js',
-    'https://in3166.github.io/sunnyNighr/scripts/install.js',
-    'https://in3166.github.io/sunnyNighr/styles/inline.css'
+    'https://in3166.github.io/sunnyNight/index.html',
+    'https://in3166.github.io/sunnyNight/scripts/app.js',
+    'https://in3166.github.io/sunnyNight/scripts/install.js',
+    'https://in3166.github.io/sunnyNight/styles/inline.css'
 ];
 
 self.addEventListener('install', (evt) => {
