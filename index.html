@@ -9,7 +9,7 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <link rel="manifest" href="sunnyNight/manifest.json">
-    <link rel="stylesheet" type="text/css" href="https://in3166.github.io/sunnyNight/sunnyNight/styles/inline.css">
+    <link rel="stylesheet" type="text/css" href="https://in3166.github.io/sunnyNight/styles/inline.css">
     <title>sunnyNight</title>
     <link rel="icon" href="sunnyNight/images/favicon.ico" type="image/icon-72x72" />
     <!-- CODELAB: Add meta theme-color -->
@@ -29,16 +29,16 @@
 
     </div>
 
-    <script src="https://in3166.github.io/sunnyNight/sunnyNight/scripts/app.js"></script>
+    <script src="https://in3166.github.io/sunnyNight/scripts/app.js"></script>
     <!-- CODELAB: Add the install script here -->
-    <script src="https://in3166.github.io/sunnyNight/sunnyNight/scripts/install.js"></script>
+    <script src="https://in3166.github.io/sunnyNight/scripts/install.js"></script>
     <script>
         // navigator 객체에 serviceWorker라는 프로퍼티가 있는지 확인하는 조건입니다.
         //만약 지원하지 않는 브라우저라면 serviceWorker라는 프로퍼티가 있을 경우에만 서비스워커를 등록
         // CODELAB: Register service worker.
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('https://in3166.github.io/sunnyNight/sunnyNight/service-worker.js')
+                navigator.serviceWorker.register('https://in3166.github.io/sunnyNight/service-worker.js')
                     .then((reg) => {
                         console.log('Service worker registered.', reg);
                     });
