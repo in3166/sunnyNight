@@ -24,10 +24,9 @@ const DATA_CACHE_NAME = 'data-cache-v2';
 const FILES_TO_CACHE = [
     '.',
     './index.html',
-    'https://in3166.github.io/sunnyNight/index.html',
-    'https://in3166.github.io/sunnyNight/scripts/app.js',
-    'https://in3166.github.io/sunnyNight/scripts/install.js',
-    'https://in3166.github.io/sunnyNight/styles/inline.css'
+    './scripts/app.js',
+    './install.js',
+    './inline.css'
 ];
 
 self.addEventListener('install', (evt) => {
