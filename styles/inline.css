@@ -1,26 +1,28 @@
-.layer {
-    padding: 20px;
-    position: absolute;
-    top: 30%;
-    left: 35%;
-    width: 200px;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    color: darkgoldenrod;
-    border: solid darkgoldenrod 1px;
-    margin: -50px 0 0 -50px;
-    text-align: center;
-}
-
-table {
-    border: darkgoldenrod solid 1px;
-    border-collapse: collapse;
-    color: yellowgreen;
-    width: 100%;
-    height: auto;
-    text-align: center;
-}
+ .layer {
+            padding: 20px;
+            position: absolute;
+            top: 40%;
+            left: 35%;
+            width: 200px;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            color: darkgoldenrod;
+            border: solid darkgoldenrod 1px;
+            margin: -50px 0 0 -50px;
+            text-align: center;
+        }
+        
+        table {
+            border: darkgoldenrod solid 1px;
+            border-collapse: collapse;
+            color: rgb(194, 232, 253);
+            width: 100%;
+            margin: 15px;
+            padding: 3px;
+            height: auto;
+            text-align: center;
+        }
 
 td,
 th {
