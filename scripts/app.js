@@ -84,7 +84,7 @@ function swit(namu) {
 //요일 구하기
 function getTodayLabel(today) {
 
-    var week = new Array('일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일');
+    var week = new Array('일', '월', '화', '수', '목', '금', '토');
     today = today % 7;
     var todayLabel = week[today];
 
