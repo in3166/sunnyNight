@@ -25,8 +25,8 @@ const FILES_TO_CACHE = [
     '.',
     './index.html',
     './scripts/app.js',
-    './install.js',
-    './inline.css'
+    './scripts/install.js',
+    './styles/inline.css'
 ];
 
 self.addEventListener('install', (evt) => {
