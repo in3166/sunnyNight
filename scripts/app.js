@@ -50,7 +50,7 @@ window.addEventListener('load', () => {
     l4.innerText = swit((namu + 4) % 6);
     l5.innerText = swit((namu + 5) % 6);
     l6.innerText = swit((namu + 6) % 6);
-    alert(getTodayLabel(today.getDay()));
+    
     d0.innerText = getTodayLabel(today.getDay());
     d1.innerText = getTodayLabel(today.getDay() + 1);
     d2.innerText = getTodayLabel(today.getDay() + 2);
