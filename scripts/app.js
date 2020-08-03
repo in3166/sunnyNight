@@ -19,7 +19,7 @@ window.addEventListener('load', () => {
     var d5 = document.getElementById('d5');
     var d6 = document.getElementById('d6');
 
-    let day = new Date(2020, 7, 30);
+    let day = new Date(2020, 7, 12);
     let today = new Date();
 
     console.log("to: " + moment(today).format('YYYY MM DD HH:mm:ss'));
